@@ -1,0 +1,32 @@
+{
+  "name": "node-radio",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx nodemon --exec node --no-warnings=ExperimentalWarning --loader ts-node/esm src/index.ts"
+  },
+  "engines": {
+    "node": "^20.0.x"
+  },
+  "keywords": ["Node", "Radio"],
+  "author": "Illia Raietskyi",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^22.5.0",
+    "tslib": "^2.7.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@fastify/throttle": "^2.0.1",
+    "fastify": "^4.28.1",
+    "fastify-socket.io": "^5.1.0",
+    "jnaudiostream": "^1.0.2",
+    "react-feather": "^2.0.10",
+    "react-router-dom": "^6.26.1",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5"
+  }
+}
