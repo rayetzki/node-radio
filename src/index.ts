@@ -1,12 +1,5 @@
 import fastify from 'fastify';
 import socketioServer from 'fastify-socket.io';
-import type { Server } from "socket.io";
-
-declare module 'fastify' {
-  interface FastifyInstance {
-    io: Server<{ hello: string }>
-  }
-}
 
 const app = await fastify({ logger: true });
 
